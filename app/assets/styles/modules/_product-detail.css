@@ -1,0 +1,72 @@
+.product-detail{
+  padding: 20px 15px;
+
+  @mixin atMedium{
+    padding: 35px 20px;
+  }
+
+  &__content{
+    p{
+      font-size: .85rem;
+      color: $medGrey;
+      line-height: 1.75;
+      padding-bottom: 1.75rem;
+    }
+  }
+
+  &__name{
+    color: $darkGrey;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 1rem 0;
+
+    @mixin atMedium{
+      border-bottom: 1px solid $lightestGrey;
+      padding: 0 0 1rem 0;
+    }
+  }
+
+  &__price{
+    color: $darkGrey;
+    font-size: .95rem;
+    padding-bottom: 1rem;
+
+    @mixin atMedium{
+      border-bottom: 1px solid $lightestGrey;
+    }
+  }
+
+  &__sizing-title{
+    color: $medGrey;
+    text-transform: uppercase;
+  }
+
+  &__sizing-select{
+    margin: 0;
+    padding: 0 0 1.25rem 0;
+    @mixin clearfix;
+
+    & li{
+      list-style: none;
+      float: left;
+      padding-right: 5px;
+    }
+
+    & a{
+      color: $medGrey;
+      text-decoration: none;
+      font-weight: 300;
+      border: 1px solid $lightGrey;
+      height: 40px;
+      width: 40px;
+      display: block;
+      text-align: center;
+      line-height: 40px;
+      transition: all .2s ease;
+
+      &:hover{
+        border: 2px solid $darkGrey;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.row{
+
+  @mixin clearfix;
+
+  &--gutters {
+    margin-right: -30px;
+  }
+
+  &--gutters > div{
+    padding-right: 30px;
+  }
+
+  @mixin atLarge{
+    &--gutters {
+      margin-right: -155px;
+    }
+
+    &--gutters > div{
+      padding-right: 155px;
+    }
+  }
+
+  &__6{
+    float: none;
+    width: 100%;
+
+    @mixin atMedium{
+      float: left;
+      width: 50%;
+    }
+  }
+}
